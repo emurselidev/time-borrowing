@@ -411,6 +411,84 @@ This section is an honest audit of the known gaps and areas where the current mo
 
 ---
 
+## From Minerals to Minutes: Development Based on Time and Equality
+
+> **Full document:** [English](outputs/documents/en/Time_Borrowing_Development_and_Equality.docx) | [Albanian](outputs/documents/sq/Zhvillimi_dhe_Barazimi_-_Huazimi_i_Kohes.docx)
+
+### The Central Argument
+
+For two centuries, the wealth of nations was determined by what lay beneath their soil — oil, coal, minerals, arable land. Countries without resources stayed poor. Countries with resources often fell into the Resource Curse. Development was, at its root, a geographical lottery.
+
+Time Borrowing proposes a fundamentally different foundation: **what matters is human time and how equally people can access capital to deploy it.**
+
+### Why This Changes Everything
+
+| Old Foundation | TB Foundation |
+|----------------|---------------|
+| Development = resources + physical capital | Development = time + talent + equal access |
+| Wealth = what you own | Wealth = what you can contribute |
+| Collateral = assets you already have | Collateral = future you will create |
+| Poor country = structurally disadvantaged | Time-rich population = structurally advantaged |
+| Inequality = inevitable by-product of growth | Equality = productive infrastructure for growth |
+| AI = threat to workers | AI = funding mechanism for workers |
+
+### Time as the Universal Resource
+
+Unlike every other resource, time is:
+- **Universal** — every human being has it, regardless of geography
+- **Equal** — the same 24 hours for every person on Earth
+- **Non-depletable** — unlike oil or minerals, it cannot run out
+- **Non-seizable** — you cannot repossess someone's future time by force
+- **Culturally neutral** — time has no ethnic, religious, or national character
+
+A child born in rural Albania has the same 24 hours as a child born in Zurich. What they lack is not potential — it is capital access. Time Borrowing closes that gap.
+
+### Breaking the Three Colonial Development Traps
+
+Many developing nations remain caught in structural traps. TB breaks all three:
+
+| Trap | Traditional Mechanism | TB Response |
+|------|-----------------------|-------------|
+| **Commodity Dependence** | Export raw materials, import manufactured goods — permanently disadvantaged terms of trade | TB funds education and entrepreneurship — builds domestic skilled workforce without needing resources |
+| **Debt Dependency** | Development requires foreign loans with conditionality — austerity, structural adjustment, loss of sovereignty | TB funded by domestic automation tax — no foreign creditor, no conditionality, full sovereignty |
+| **Brain Drain** | Talented citizens emigrate to access capital in richer countries | TB provides capital access at home — no need to emigrate to invest in your own potential |
+
+### New Development Metrics
+
+Under TB, how we measure a country's progress changes:
+
+| Old Metric | TB Metric |
+|------------|-----------|
+| GDP per capita (skewed by resource extraction) | Productivity per worker (human capital utilisation) |
+| Export revenue (commodity prices) | TB repayment rate (productive use of advances) |
+| Foreign investment flows | FreeOne → Producer conversion rate (social mobility speed) |
+| Natural resource reserves | Youth population size (future time collateral pool) |
+| Gini coefficient (post-transfer inequality) | Capital access equality (pre-TB access fairness) |
+
+A country with a large young population and no oil — Albania, Ethiopia, the Philippines — is not resource-poor under this framework. **It is time-rich.** Its youth population represents a large pool of future collateral for TB advances.
+
+### What the Simulation Showed
+
+When TB was applied in the simulation, the inequality (Gini) fell from **0.358 → 0.323** over 25 years while GDP grew **59% more** than the baseline. This is not a coincidence. The equality improvement *caused* the growth — talent that was previously locked out of capital access became productive, paid taxes, and innovated.
+
+Equality, in the TB framework, is not a cost. It is infrastructure.
+
+### The Sovereignty Dimension
+
+Every other major development instrument creates a dependency relationship. TB does not:
+
+| Instrument | Dependency Created |
+|------------|-------------------|
+| World Bank loans | Policy conditionality from rich-country shareholders |
+| IMF programs | Austerity requirements |
+| Foreign Direct Investment | Profit repatriation to foreign corporations |
+| Development aid | Donor country priorities and branding |
+| **Time Borrowing** | **None — fully sovereign, funded domestically** |
+
+A country implementing TB is not asking for permission. It is taxing the automation already running in its own economy and redirecting that value to its own citizens.
+
+---
+
 ## Contributing
 
 This project is open for contributions from anyone who wants to improve the model, the documentation, or the real-world implementation pathway. Please:
