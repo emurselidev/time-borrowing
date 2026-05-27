@@ -1,0 +1,331 @@
+{
+  "description": "Time Borrowing Instrument \u2014 Detailed Mechanics Proof",
+  "core_circuit": {
+    "step_1": "[AI & Automation Work Done]",
+    "step_2": "[15% Automation Tax] \u2192 [TB Liquidity Pool]",
+    "step_3": "[Capital Advanced to Citizens (education/entrepreneurship/hardship)]",
+    "step_4": "[Citizen uses capital productively]",
+    "step_5": "[Repayment completes circuit \u2014 money returns to pool]",
+    "step_6_default": "[TDRW Freeze if < 30% repaid \u2014 self-balancing]",
+    "why_not_inflation": "Money backed by real automation output, not fiat printing"
+  },
+  "tdrw_examples": [
+    {
+      "description": "Full default \u2014 5yr TB \u2014 first offence",
+      "amount_advanced": 5000,
+      "amount_repaid": 0,
+      "repaid_fraction": 0.0,
+      "period_years": 5,
+      "prior_defaults": 0,
+      "freeze_years": 3.33,
+      "explanation": "Repaid: 0.0% of 5000 ACU | Threshold: 30% | Severity: 1.000 | Prior defaults: 0 | Freeze: 3.3 years"
+    },
+    {
+      "description": "30% repaid \u2014 5yr TB \u2014 no freeze (at threshold)",
+      "amount_advanced": 5000,
+      "amount_repaid": 1500,
+      "repaid_fraction": 0.3,
+      "period_years": 5,
+      "prior_defaults": 0,
+      "freeze_years": 0.0,
+      "explanation": "Repaid: 30.0% of 5000 ACU | Threshold: 30% | Severity: 0.000 | Prior defaults: 0 | Freeze: 0.0 years"
+    },
+    {
+      "description": "20% repaid \u2014 5yr TB \u2014 first offence",
+      "amount_advanced": 5000,
+      "amount_repaid": 1000,
+      "repaid_fraction": 0.2,
+      "period_years": 5,
+      "prior_defaults": 0,
+      "freeze_years": 1.11,
+      "explanation": "Repaid: 20.0% of 5000 ACU | Threshold: 30% | Severity: 0.333 | Prior defaults: 0 | Freeze: 1.1 years"
+    },
+    {
+      "description": "20% repaid \u2014 5yr TB \u2014 second offence",
+      "amount_advanced": 5000,
+      "amount_repaid": 1000,
+      "repaid_fraction": 0.2,
+      "period_years": 5,
+      "prior_defaults": 1,
+      "freeze_years": 2.78,
+      "explanation": "Repaid: 20.0% of 5000 ACU | Threshold: 30% | Severity: 0.333 | Prior defaults: 1 | Freeze: 2.8 years"
+    },
+    {
+      "description": "10% repaid \u2014 5yr TB \u2014 first offence",
+      "amount_advanced": 5000,
+      "amount_repaid": 500,
+      "repaid_fraction": 0.1,
+      "period_years": 5,
+      "prior_defaults": 0,
+      "freeze_years": 2.22,
+      "explanation": "Repaid: 10.0% of 5000 ACU | Threshold: 30% | Severity: 0.667 | Prior defaults: 0 | Freeze: 2.2 years"
+    },
+    {
+      "description": "10% repaid \u2014 5yr TB \u2014 third offence",
+      "amount_advanced": 5000,
+      "amount_repaid": 500,
+      "repaid_fraction": 0.1,
+      "period_years": 5,
+      "prior_defaults": 2,
+      "freeze_years": 7.0,
+      "explanation": "Repaid: 10.0% of 5000 ACU | Threshold: 30% | Severity: 0.667 | Prior defaults: 2 | Freeze: 7.0 years"
+    },
+    {
+      "description": "Full default \u2014 3yr TB \u2014 first offence",
+      "amount_advanced": 3000,
+      "amount_repaid": 0,
+      "repaid_fraction": 0.0,
+      "period_years": 3,
+      "prior_defaults": 0,
+      "freeze_years": 2.0,
+      "explanation": "Repaid: 0.0% of 3000 ACU | Threshold: 30% | Severity: 1.000 | Prior defaults: 0 | Freeze: 2.0 years"
+    },
+    {
+      "description": "40% repaid \u2014 4yr TB \u2014 fully above threshold",
+      "amount_advanced": 2000,
+      "amount_repaid": 800,
+      "repaid_fraction": 0.4,
+      "period_years": 4,
+      "prior_defaults": 1,
+      "freeze_years": 0.0,
+      "explanation": "Repaid: 40.0% of 2000 ACU | Threshold: 30% | Severity: 0.000 | Prior defaults: 1 | Freeze: 0.0 years"
+    }
+  ],
+  "advance_examples": [
+    {
+      "description": "Large pool \u2014 easy approval",
+      "requested": 5000,
+      "pool_available": 50000,
+      "active_borrowers": 10,
+      "approved": 3636.36,
+      "repayment_schedule_5yr": [
+        727.27,
+        727.27,
+        727.27,
+        727.27,
+        727.27
+      ],
+      "total_to_repay": 3636.36,
+      "interest_charged": 0,
+      "interest_rate": "0% \u2014 no financial interest (time is collateral)"
+    },
+    {
+      "description": "Medium pool \u2014 approved but capped at pool share",
+      "requested": 5000,
+      "pool_available": 8000,
+      "active_borrowers": 5,
+      "approved": 1066.67,
+      "repayment_schedule_5yr": [
+        213.33,
+        213.33,
+        213.33,
+        213.33,
+        213.33
+      ],
+      "total_to_repay": 1066.67,
+      "interest_charged": 0,
+      "interest_rate": "0% \u2014 no financial interest (time is collateral)"
+    },
+    {
+      "description": "Small pool \u2014 partially constrained",
+      "requested": 1000,
+      "pool_available": 3000,
+      "active_borrowers": 2,
+      "approved": 800.0,
+      "repayment_schedule_5yr": [
+        160.0,
+        160.0,
+        160.0,
+        160.0,
+        160.0
+      ],
+      "total_to_repay": 800.0,
+      "interest_charged": 0,
+      "interest_rate": "0% \u2014 no financial interest (time is collateral)"
+    },
+    {
+      "description": "Very small pool \u2014 below minimum, rejected",
+      "requested": 5000,
+      "pool_available": 500,
+      "active_borrowers": 1,
+      "approved": 0.0,
+      "repayment_schedule_5yr": [],
+      "total_to_repay": 0,
+      "interest_charged": 0,
+      "interest_rate": "0% \u2014 no financial interest (time is collateral)"
+    }
+  ],
+  "pool_sustainability_20yr_projection": {
+    "starting_pool": 2809.3,
+    "solvent_throughout": true,
+    "pool_by_year": [
+      2809.3,
+      3932.1,
+      5167.9,
+      6528.1,
+      8025.0,
+      9672.3,
+      11485.1,
+      13480.0,
+      15675.1,
+      18090.5,
+      20748.1,
+      23672.3,
+      26889.6,
+      30429.4,
+      34323.9,
+      38608.6,
+      43322.6,
+      48508.7,
+      54214.2,
+      60490.9,
+      67396.1
+    ],
+    "final_pool": 67396.1,
+    "shortfall_year": null,
+    "verdict": "Pool is SELF-SUSTAINING"
+  },
+  "automation_tax_20yr_projection": [
+    {
+      "year": 0,
+      "automation_output": 1026.04,
+      "tb_tax_revenue": 153.91
+    },
+    {
+      "year": 1,
+      "automation_output": 1128.64,
+      "tb_tax_revenue": 169.3
+    },
+    {
+      "year": 2,
+      "automation_output": 1241.51,
+      "tb_tax_revenue": 186.23
+    },
+    {
+      "year": 3,
+      "automation_output": 1365.66,
+      "tb_tax_revenue": 204.85
+    },
+    {
+      "year": 4,
+      "automation_output": 1502.23,
+      "tb_tax_revenue": 225.33
+    },
+    {
+      "year": 5,
+      "automation_output": 1652.45,
+      "tb_tax_revenue": 247.87
+    },
+    {
+      "year": 6,
+      "automation_output": 1817.69,
+      "tb_tax_revenue": 272.65
+    },
+    {
+      "year": 7,
+      "automation_output": 1999.46,
+      "tb_tax_revenue": 299.92
+    },
+    {
+      "year": 8,
+      "automation_output": 2199.41,
+      "tb_tax_revenue": 329.91
+    },
+    {
+      "year": 9,
+      "automation_output": 2419.35,
+      "tb_tax_revenue": 362.9
+    },
+    {
+      "year": 10,
+      "automation_output": 2661.28,
+      "tb_tax_revenue": 399.19
+    },
+    {
+      "year": 11,
+      "automation_output": 2927.41,
+      "tb_tax_revenue": 439.11
+    },
+    {
+      "year": 12,
+      "automation_output": 3220.15,
+      "tb_tax_revenue": 483.02
+    },
+    {
+      "year": 13,
+      "automation_output": 3542.17,
+      "tb_tax_revenue": 531.33
+    },
+    {
+      "year": 14,
+      "automation_output": 3896.39,
+      "tb_tax_revenue": 584.46
+    },
+    {
+      "year": 15,
+      "automation_output": 4286.02,
+      "tb_tax_revenue": 642.9
+    },
+    {
+      "year": 16,
+      "automation_output": 4714.63,
+      "tb_tax_revenue": 707.19
+    },
+    {
+      "year": 17,
+      "automation_output": 5186.09,
+      "tb_tax_revenue": 777.91
+    },
+    {
+      "year": 18,
+      "automation_output": 5704.7,
+      "tb_tax_revenue": 855.7
+    },
+    {
+      "year": 19,
+      "automation_output": 6275.17,
+      "tb_tax_revenue": 941.28
+    },
+    {
+      "year": 20,
+      "automation_output": 6902.68,
+      "tb_tax_revenue": 1035.4
+    }
+  ],
+  "key_governable_parameters": {
+    "automation_tax_rate": {
+      "current": "15%",
+      "range": "5% \u2013 30%",
+      "effect": "Higher rate \u2192 larger pool \u2192 more advances; risk: reduces automation incentive"
+    },
+    "tb_max_amount": {
+      "current": "5000 ACU",
+      "range": "1000 \u2013 50000 ACU",
+      "effect": "Higher cap \u2192 larger advances \u2192 more education/entrepreneurship; risk: larger potential losses"
+    },
+    "repayment_threshold": {
+      "current": "30%",
+      "range": "10% \u2013 80%",
+      "effect": "Higher threshold \u2192 stricter freeze trigger \u2192 less risk; trade-off: less accessible"
+    },
+    "freeze_base_years": {
+      "current": "2.0 years",
+      "range": "0.5 \u2013 5.0 years",
+      "effect": "Longer freeze \u2192 stronger deterrent; trade-off: reduces second chances"
+    }
+  },
+  "comparison_with_alternatives": {
+    "vs_ubi": {
+      "UBI": "Unconditional. Fiat-funded. No repayment. Inflationary. No productivity link.",
+      "TB": "Conditional. Productivity-backed. Repaid over time. Inflation-neutral. Directly linked to output."
+    },
+    "vs_traditional_loans": {
+      "Loans": "Interest-bearing. Requires collateral. Regressive (poor pay more). Bank-profit extractive.",
+      "TB": "0% interest. Time-collateral only. Progressive (everyone eligible). Publicly managed."
+    },
+    "vs_welfare": {
+      "Welfare": "Unconditional transfer. No productivity link. Dependency trap. Stigmatised.",
+      "TB": "Repayable advance. Productive-use incentive. Builds agency. Normalised."
+    }
+  }
+}
