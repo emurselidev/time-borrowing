@@ -290,6 +290,7 @@ Duhet të shohësh: **293 teste, 0 dështime.**
 python builders/build_all_docs.py            # të dyja gjuhët
 python builders/build_all_docs.py --lang en  # vetëm anglisht
 python builders/build_all_docs.py --lang sq  # vetëm shqip
+python builders/build_development_doc.py     # dokumenti i zhvillimit dhe barazisë
 ```
 
 ---
@@ -416,13 +417,88 @@ Gjithçka tjetër mbetet teorike pa një pilot real në botën fizike, me njerë
 
 ---
 
-## Tre dokumentet e plota (të gatshme për t'u shkarkuar)
+## Nga Mineralet te Minutat: Zhvillimi Bazuar në Kohë dhe Barazi
+
+> **Dokumenti i plotë:** [Anglisht](outputs/documents/en/Time_Borrowing_Development_and_Equality.docx) | [Shqip](outputs/documents/sq/Zhvillimi_dhe_Barazimi_-_Huazimi_i_Kohes.docx)
+
+### Ideja kryesore
+
+Për dy shekuj, pasuria e vendeve varej nga ç'ka kishte nën tokë — nafta, qymyri, mineralet, toka pjellore. Vendet pa burime mbetën të varfra. Vendet me burime shpesh ranë në "mallkimin e burimeve". Zhvillimi ishte, në thelb, **një lotari gjeografike**.
+
+Huazimi i Kohës propozon një themel krejtësisht tjetër: **çfarë ka rëndësi është koha njerëzore dhe se sa barazi kanë njerëzit për të hyrë në kapital**.
+
+### Pse kjo ndryshon gjithçka
+
+| Themeli i vjetër | Themeli i TB |
+|------------------|--------------|
+| Zhvillimi = burime + kapital fizik | Zhvillimi = kohë + talent + qasje e barabartë |
+| Pasuria = çfarë zotëron | Pasuria = çfarë mund të kontribuosh |
+| Kolateral = asetet që tashmë ke | Kolateral = e ardhmja që do të krijosh |
+| Vend i varfër = strukturalisht i disfavorizuar | Popullsi e re e madhe = strukturalisht e favorizuar |
+| Pabarazia = produkt anësor i pashmangshëm | Barazia = infrastrukturë prodhuese |
+| AI = kërcënim për punëtorët | AI = mekanizëm financimi për punëtorët |
+
+### Koha si burimi universal
+
+Ndryshe nga çdo burim tjetër, koha është:
+- **Universale** — çdo njeri e ka, pavarësisht vendit të lindjes
+- **E barabartë** — të njëjtat 24 orë për çdo person
+- **E pandepletable** — ndryshe nga nafta, nuk mund të mbarojë
+- **E pazëvëndësueshme me forcë** — nuk mund t'i marrësh dikujt kohën e ardhshme
+- **Neutrale kulturalisht** — koha nuk ka komb, fe apo ngjyrë
+
+Një fëmijë i lindur në Shqipëri ka të njëjtat 24 orë si një fëmijë i lindur në Zvicër. Ç'u mungon nuk është potenciali — është **qasja në kapital**. Huazimi i Kohës e mbyll këtë boshllëk.
+
+### Thyerja e tre kurtheve
+
+Shumë vende zhvilluese janë bllokuar në tre kurthe strukturore. TB i thyen të tria:
+
+| Kurtha | Si funksionon sot | Si e thyen TB |
+|--------|-------------------|---------------|
+| **Varësia nga mallrat** | Eksporto lëndë të para, importo produkte — terma shkëmbimi gjithmonë të disfavorshme | TB financon arsimin dhe sipërmarrjen — ndërton fuqi punëtore të kualifikuar pa nevojë burimesh |
+| **Varësia nga borxhi** | Zhvillimi kërkon kredi të huaja me kushte — humbje sovraniteti | TB financohet nga taksa e brendshme e automatizimit — asnjë kreditor i huaj, asnjë kusht |
+| **Ikja e trutë** | Talentët largohen sepse nuk gjejnë kapital në shtëpi | TB jep kapital në shtëpi — nuk ka nevojë të emigrosh |
+
+### Çfarë tregoi simulimi
+
+Kur TB u aplikua në simulim:
+- **Gini-ja** (pabarazia) ra nga **0.358 → 0.323** në 25 vjet
+- **PBB** u rrit **59% më shumë** se skenari bazë
+- **Fondi TB** mbeti i qëndrueshëm dhe i aftë
+
+Kjo nuk është rastësi. Përmirësimi i barazisë **shkaktoi** rritjen — talenti i bllokuar nga varfëria u bë prodhues, pagoi taksa dhe inovoi. **Barazia, në kornizën TB, nuk është shpenzim. Është infrastrukturë.**
+
+### Metrikat e reja
+
+| Metrika e vjetër | Metrika e TB |
+|------------------|--------------|
+| PBB për frymë (i shtrembëruar nga burimet) | Produktiviteti për punëtor (shfrytëzimi i kapitalit njerëzor) |
+| Të ardhurat nga eksportet | Norma e shlyerjes TB (përdorim produktiv) |
+| Investimet e huaja | Norma FreeOne → Prodhues (shpejtësia e mobilitetit social) |
+| Rezervat e burimeve natyrore | Madhësia e popullsisë së re (kolateral i ardhshëm) |
+
+Nën këtë kornizë, **Shqipëria me popullsinë e re dhe pa naftë nuk është e varfër në burime — është e pasur në kohë**.
+
+### Sovraniteti
+
+Çdo instrument tjetër zhvillimi krijon varësi. TB nuk krijon:
+- **Huatë e Bankës Botërore** → kushte nga aksionarët e vendeve të pasura
+- **Programet e FMN** → kursim dhe humbje sovraniteti
+- **Ndihmat** → prioritetet e donatorit
+- **Huazimi i Kohës** → **asgjë — plotësisht sovran, financohet nga brenda**
+
+Një vend që zbaton TB nuk po kërkon leje nga askush. Po tatçon automatizimin që tashmë funksionon në ekonominë e vet dhe po e rikthen atë vlerë tek qytetarët e vet.
+
+---
+
+## Katër dokumentet e plota (të gatshme për t'u shkarkuar)
 
 | Dokumenti | Anglisht | Shqip |
 |-----------|----------|-------|
 | Propozimi i politikave (për qeveritë) | [📄 EN](outputs/documents/en/Time_Borrowing_Policy_Proposal.docx) | [📄 SQ](outputs/documents/sq/Propozimi_i_Politikave_-_Huazimi_i_Kohes.docx) |
 | Udhëzuesi për qytetarët | [📄 EN](outputs/documents/en/Time_Borrowing_Citizen_Guide.docx) | [📄 SQ](outputs/documents/sq/Udhezuesi_per_Qytetaret_-_Huazimi_i_Kohes.docx) |
 | Gjeopolitika dhe teoria e lojrave | [📄 EN](outputs/documents/en/Time_Borrowing_Geopolitics_Game_Theory.docx) | [📄 SQ](outputs/documents/sq/Gjeopolitika_dhe_Teoria_e_Lojrave_-_Huazimi_i_Kohes.docx) |
+| Zhvillimi dhe barazia (i ri) | [📄 EN](outputs/documents/en/Time_Borrowing_Development_and_Equality.docx) | [📄 SQ](outputs/documents/sq/Zhvillimi_dhe_Barazimi_-_Huazimi_i_Kohes.docx) |
 
 ---
 

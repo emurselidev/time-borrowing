@@ -127,9 +127,10 @@ economy/
 ├── prove_tb_works.py       # Full proof: 4 scenarios, 10 proof points, JSON/CSV export
 │
 ├── builders/               # Document generation scripts
-│   ├── build_all_docs.py       # Generates all 3 Word documents (EN + SQ)
-│   ├── build_word_doc.py       # Original single-doc builder
-│   └── doc_i18n.py             # Localisation helpers
+│   ├── build_all_docs.py           # Generates all 3 Word documents (EN + SQ)
+│   ├── build_development_doc.py    # Development & Equality document (EN + SQ)
+│   ├── build_word_doc.py           # Original single-doc builder
+│   └── doc_i18n.py                 # Localisation helpers
 │
 ├── tests/
 │   ├── test_equations.py       # 117 tests for equation_library.py
@@ -148,11 +149,13 @@ economy/
 │       ├── en/                     # English Word documents
 │       │   ├── Time_Borrowing_Policy_Proposal.docx
 │       │   ├── Time_Borrowing_Citizen_Guide.docx
-│       │   └── Time_Borrowing_Geopolitics_Game_Theory.docx
+│       │   ├── Time_Borrowing_Geopolitics_Game_Theory.docx
+│       │   └── Time_Borrowing_Development_and_Equality.docx
 │       └── sq/                     # Albanian Word documents (Albanian filenames)
 │           ├── Propozimi_i_Politikave_-_Huazimi_i_Kohes.docx
 │           ├── Udhezuesi_per_Qytetaret_-_Huazimi_i_Kohes.docx
-│           └── Gjeopolitika_dhe_Teoria_e_Lojrave_-_Huazimi_i_Kohes.docx
+│           ├── Gjeopolitika_dhe_Teoria_e_Lojrave_-_Huazimi_i_Kohes.docx
+│           └── Zhvillimi_dhe_Barazimi_-_Huazimi_i_Kohes.docx
 │
 ├── README.md           # Default README — Albanian (shown on GitHub)
 ├── README_ENG.md       # This file — English version
@@ -218,6 +221,20 @@ Produces documents in:
   - `Propozimi_i_Politikave_-_Huazimi_i_Kohes.docx`
   - `Udhezuesi_per_Qytetaret_-_Huazimi_i_Kohes.docx`
   - `Gjeopolitika_dhe_Teoria_e_Lojrave_-_Huazimi_i_Kohes.docx`
+  - `Zhvillimi_dhe_Barazimi_-_Huazimi_i_Kohes.docx`
+
+```bash
+python builders/build_development_doc.py   # builds the Development & Equality document
+```
+
+**All documents:**
+
+| Document | English | Albanian |
+|----------|---------|---------|
+| Policy Proposal | [📄 EN](outputs/documents/en/Time_Borrowing_Policy_Proposal.docx) | [📄 SQ](outputs/documents/sq/Propozimi_i_Politikave_-_Huazimi_i_Kohes.docx) |
+| Citizen Guide | [📄 EN](outputs/documents/en/Time_Borrowing_Citizen_Guide.docx) | [📄 SQ](outputs/documents/sq/Udhezuesi_per_Qytetaret_-_Huazimi_i_Kohes.docx) |
+| Geopolitics & Game Theory | [📄 EN](outputs/documents/en/Time_Borrowing_Geopolitics_Game_Theory.docx) | [📄 SQ](outputs/documents/sq/Gjeopolitika_dhe_Teoria_e_Lojrave_-_Huazimi_i_Kohes.docx) |
+| Development & Equality | [📄 EN](outputs/documents/en/Time_Borrowing_Development_and_Equality.docx) | [📄 SQ](outputs/documents/sq/Zhvillimi_dhe_Barazimi_-_Huazimi_i_Kohes.docx) |
 
 ---
 
