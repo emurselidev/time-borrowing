@@ -4,13 +4,7 @@
 **Language:** Python 3.10+  
 **License:** [Humanitarian Use License](LICENSE.md) — free for all, for the good of humanity  
 **Default README (Albanian / Shqip):** [README.md](README.md)
-
-> This is the English version. The default repository README is in Albanian — the author's native language.  
-> *Ky është versioni anglisht. README-ja kryesore e depoves është në shqip.*
-
-> *"What if artificial intelligence, instead of replacing human potential,  
-> became the very engine that funds it?"*
-
+ 
 ---
 
 ## What is Time Borrowing?
